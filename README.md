@@ -1,5 +1,5 @@
 <div align="center">
-  <h1 align="center">PosterLab - Knowledge transferred. FAST.</h1>
+  <h1 align="center">PosterLab - Knowledge transferred.   FAST.</h1>
 
   <p align="center">
     <img src="web-app-material/assets/img/PosterLabLogo.svg" alt="posterlab-logo" width="240px" height="120px"/>

@@ -46,6 +46,7 @@ export class ProjectController {
         private readonly uploadRepository: UploadRepository,
         private readonly projectRepository: ProjectRepository,
     ){}
+    
 
     @Post()
     @UseGuards(JwtAuthGuard)

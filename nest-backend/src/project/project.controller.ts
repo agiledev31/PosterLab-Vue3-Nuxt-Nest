@@ -37,6 +37,7 @@ import { ProjectRepository } from './project.repository'
 @Controller('workspaces/:workspaceId/projects')
 @ApiTags('Projects')
 export class ProjectController {
+    
     constructor(
         private readonly projectPostHandler: ProjectPostHandler,
         private readonly projectGetOneHandler: ProjectGetOneHandler,
@@ -44,7 +45,7 @@ export class ProjectController {
         private readonly projectPatchHandler: ProjectPatchHandler,
         private readonly uploadRepository: UploadRepository,
         private readonly projectRepository: ProjectRepository,
-    ) {}
+    ){}
 
     @Post()
     @UseGuards(JwtAuthGuard)

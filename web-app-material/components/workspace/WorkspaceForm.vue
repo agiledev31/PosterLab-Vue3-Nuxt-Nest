@@ -1,7 +1,7 @@
 <template>
     <VCard class="tw-p-5">
         <ValidationObserver v-slot="{ handleSubmit, invalid }" slim>
-            <VCardTitle class="tw-flex tw-items-center tw-justify-between tw-py-6">
+            <VCardTitle class="tw-flex tw-items-center tw-justify-between tw-py-6 ">
                 <span v-if="createWorkspaceModelAttributes.newWorkspace">Add new workspace</span>
                 <span v-else>Workspace settings</span>
             </VCardTitle>

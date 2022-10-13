@@ -319,9 +319,9 @@ model Topic {
 }
 
 model Keyword {
-  id             Int              @id() @default(autoincrement())
-  name           String           @db.VarChar
-  workspace      Workspace        @relation(fields: [workspaceId], references: [id])
+  id             Int                @id() @default(autoincrement())
+  name           String             @db.VarChar
+  workspace      Workspace          @relation(fields: [workspaceId], references: [id])
   workspaceId    Int
   InformationTab InformationTab[]
   posters        Poster[]

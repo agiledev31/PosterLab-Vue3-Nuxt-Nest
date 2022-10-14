@@ -87,7 +87,6 @@ export default defineComponent({
         const { deleteProject } = useProject()
 
         const dialog = ref(false)
-
         const caslWorkspace = computed(() => {
             return subject('Workspace', { ...$accessor.workspace.getDefaultWorkspace })
         })

@@ -14,7 +14,6 @@
                 {{ user && user.currentPosition }}
             </p>
         </div>
-
         <div v-if="user && user.skills && user.skills.length" class="tw-mb-3">
             <h2 class="tw-text-base">Skills</h2>
             <VChip
@@ -29,7 +28,6 @@
                 {{ skill.name }}
             </VChip>
         </div>
-
         <div v-if="user && user.biography" class="tw-mb-3">
             <h2 class="tw-text-base">Biography</h2>
             <p class="text-xs">

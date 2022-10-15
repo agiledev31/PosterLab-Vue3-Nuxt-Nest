@@ -1,4 +1,3 @@
-This file documents JITSI referencing the `/web-app-material` folder
 
 # Guidelines for implementing a new feature on the frontend
 

@@ -19,4 +19,5 @@ import { ProjectPostHandler } from './handlers/project-post.handler'
     exports: [ProjectRepository],
     controllers: [ProjectController],
 })
+
 export class ProjectModule {}

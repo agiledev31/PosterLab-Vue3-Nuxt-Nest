@@ -11,14 +11,12 @@ export class UploadRepository {
             data,
         })
     }
-
     async update(id: number, data: Prisma.UploadUpdateInput): Promise<Upload> {
         return this.prisma.upload.update({
             where: { id },
             data,
         })
     }
-
     async delete(id: number): Promise<Upload> {
         try {
             return this.prisma.upload.delete({ where: { id } })

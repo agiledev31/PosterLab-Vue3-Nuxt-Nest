@@ -7,11 +7,8 @@ export interface IEmailInvitationMailContext {
 
 export class EmailInvitationMail extends Mail {
     _subject = 'Invitation Email'
-
     _template = 'email-invitation'
-
     _from = 'hello@posterlab.co'
-
     _context: IEmailInvitationMailContext
 
     constructor(context: IEmailInvitationMailContext) {

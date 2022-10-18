@@ -48,7 +48,7 @@ export class AuthController {
         return this.authProfilePatchHandler.handle(body, user, file)
     }
 
-    // TODO: redirect-url (or uri)
+    // TODO: redirect-url (or uri) should be 
     @Get('redirect-uri')
     async azureLogin(
         @Res() res: Response,

@@ -51,9 +51,7 @@
                     >
                         Authors
                     </VStepperStep>
-
                     <VDivider></VDivider>
-
                     <VStepperStep
                         editable
                         :step="3"
@@ -286,7 +284,6 @@ import {
     useRouter,
 } from '@nuxtjs/composition-api'
 import { ValidationObserver } from 'vee-validate'
-
 import { intersectionBy } from 'lodash'
 import useIcons from '~/composables/common/useIcons'
 import useUpload from '~/composables/upload/useUpload'
@@ -342,6 +339,7 @@ export default defineComponent({
 
         const { $accessor } = useContext()
         const busy = ref(false)
+        
         $route.value.query.step = step.value.toString()
         const availableVisibilities = ref()
         // Computed

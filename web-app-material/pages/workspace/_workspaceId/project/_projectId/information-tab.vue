@@ -6,7 +6,7 @@
                     <VIcon left>mdi-pencil</VIcon>
                     Edit Content
                 </VBtn>
-
+                // information tab update modal
                 <VDialog
                     v-model="modalShow"
                     transition="scroll-x-reverse-transition"

@@ -20,7 +20,6 @@
                             />
                         </ValidationProvider>
                     </div>
-
                     <div class="lg:tw-col-span-1 tw-col-span-2">
                         <ValidationProvider
                             v-slot="{ errors }"
@@ -39,7 +38,6 @@
                         </ValidationProvider>
                     </div>
                 </div>
-
                 <div class="tw-grid tw-grid-cols-2 tw-gap-x-6">
                     <div class="lg:tw-col-span-1 tw-col-span-2">
                         <VTextField
@@ -61,7 +59,6 @@
                         />
                     </div>
                 </div>
-
                 <VTextField
                     v-if="form.role"
                     v-model="form.role"
@@ -70,7 +67,6 @@
                     disabled
                     dense
                 />
-
                 <a
                     v-if="isLocalAccount"
                     :href="passwordResetUrl"
@@ -78,7 +74,6 @@
                 >
                     Reset Password
                 </a>
-
                 <VCheckbox
                     v-model="form.disableNotifications"
                     label="Disable chat email notifications"
@@ -209,10 +204,12 @@ export default defineComponent({
             },
         }
     },
+    
     fetch(): void {
         const role = this.$auth.user.roles?.filter((x) => x.tenantId === this.getTenantId)
         if (role) this.form.role = role[0].name
     },
+    
     computed: {
         getTenantId() {
             return this.$accessor.tenant.getTenantId
@@ -230,6 +227,7 @@ export default defineComponent({
             return !!userAccount
         },
     },
+    
     methods: {
         async saveProfileChanges(): Promise<void> {
             try {

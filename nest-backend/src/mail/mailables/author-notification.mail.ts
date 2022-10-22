@@ -10,11 +10,8 @@ export interface IAuthorNotificationMailContext {
 
 export class EmailAuthorNotificationMail extends Mail {
     _subject = 'Co-author notification'
-
     _template = 'author-notification'
-
     _from = 'no-reply@posterlab.co'
-
     _context: IAuthorNotificationMailContext
 
     constructor(context: IAuthorNotificationMailContext) {

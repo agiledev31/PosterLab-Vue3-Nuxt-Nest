@@ -8,6 +8,7 @@ interface VisibilityOption {
     label: string
 }
 
+// theme
 const theme = {
     posterlab: false,
     name: 'PosterLab',

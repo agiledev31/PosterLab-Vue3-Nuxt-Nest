@@ -3,21 +3,18 @@
         <template #activator="{ on, attrs }">
             <slot name="activator" v-bind="{ on, attrs }"></slot>
         </template>
-
         <ValidationObserver v-slot="{ handleSubmit, valid }" slim>
             <VCard>
                 <VContainer>
                     <VCardTitle class="justify-center d-flex">
                         <span class="text-h5">Invite new users</span>
                     </VCardTitle>
-
                     <VCardActions>
                         <VContainer>
                             <VRow>
                                 <p class="pl-3">{{ inviteTitle }}</p>
                             </VRow>
                             <IamInvitationLink />
-
                             <div v-if="!invitationSent">
                                 <VRow v-for="(user, index) in users" :key="index" dense>
                                     <VCol cols="12" sm="6" align-self="center">
@@ -171,7 +168,6 @@ export default Vue.extend({
                 value: '',
                 disabled: true,
             })
-
             return items
         },
     },

@@ -53,9 +53,11 @@ import { Actions, Resources } from '~/types/iam'
 
 export default defineComponent({
     middleware: ['auth'],
+    
     meta: {
         permissions: (route: Route) => [[Resources.TENANT, route.params.tenantId, Actions.ADMIN]],
     },
+    
     setup() {
         const { $accessor, $axios, $logger } = useContext()
 

@@ -15,7 +15,7 @@
                 <loader></loader>
             </VContainer>
         </VContainer>
-
+        // if there is an error
         <p v-if="error" class="error">{{ error }}</p>
     </div>
 </template>

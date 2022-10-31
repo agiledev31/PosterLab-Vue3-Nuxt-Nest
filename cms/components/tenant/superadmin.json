@@ -1,10 +1,12 @@
 {
+    
   "collectionName": "components_tenant_superadmins",
   "info": {
     "name": "superadmin",
     "icon": "user-ninja",
     "description": ""
   },
+    
   "options": {},
   "attributes": {
     "email": {

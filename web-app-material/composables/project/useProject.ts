@@ -136,25 +136,22 @@ export default function useProject() {
     function _getStateVariables() {
         project.value = $accessor.project.getProject
         informationTab.value = $accessor.project.getInformationTab
+        
         summary.value =
             $accessor.project.getInformationTab && $accessor.project.getInformationTab.description
                 ? $accessor.project.getInformationTab.description
                 : ''
-
         topicsList.value = $accessor.project.getInformationTab.topics
             ? $accessor.project.getInformationTab.topics.map((item) => {
                   return { text: item.name }
               })
             : []
-
         keywordsList.value = $accessor.project.getInformationTab.keywords
             ? $accessor.project.getInformationTab.keywords.map((item) => {
                   return { text: item.name }
               })
             : []
-
         attachments.value = $accessor.project.getInformationTab.attachments
-
         attachmentTypes.value = $accessor.project.getInformationTab.attachments
             ? $accessor.project.getInformationTab.attachments.map((item) => {
                   const temp = item.originalname?.split('.')
@@ -162,6 +159,7 @@ export default function useProject() {
               })
             : []
     }
+    
     function _resetdefaultStateVariables() {
         project.value = {} as Project
         informationTab.value = {} as InformationTab

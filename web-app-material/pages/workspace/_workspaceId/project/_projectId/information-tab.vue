@@ -6,7 +6,7 @@
                     <VIcon left>mdi-pencil</VIcon>
                     Edit Content
                 </VBtn>
-                // information tab update modal
+                
                 <VDialog
                     v-model="modalShow"
                     transition="scroll-x-reverse-transition"
@@ -73,6 +73,7 @@
                                     <span class="tw-text-xs tw-pr-10 tw-py-0">
                                         {{ attachment.originalname }}
                                     </span>
+                                    
                                     <VBtn
                                         icon
                                         class="tw-text-black tw-py-0"
@@ -125,6 +126,7 @@
                         </div>
                     </VCardText>
                 </div>
+                
                 <div>
                     <VCardTitle class="tw-text-black tw-text-base tw-pb-1">Keywords</VCardTitle>
                     <VCardText class="tw-flex">

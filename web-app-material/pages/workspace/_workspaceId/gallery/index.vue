@@ -129,22 +129,27 @@ export default defineComponent({
          * For the warning: [Vue warn]: Write operation failed: computed value is readonly.
          * See: https://github.com/nuxt-community/composition-api/issues/19
          */
+         
         return {
+        
             // Refs
             visibility,
             posters,
             search,
             layout,
             isTenantMember,
+            
             // Const
             PosterVisibilityEnum,
             GalleryLayout,
+            
             // Computed
             showGallery,
             icons,
             galleryPosters,
             workspaceId,
             caslPoster,
+            
             // Methods
             fetchPosters: fetch,
             clearSearch,
